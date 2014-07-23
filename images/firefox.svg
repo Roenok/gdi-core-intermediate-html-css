@@ -4,7 +4,7 @@
    <!ENTITY ns_svg "http://www.w3.org/2000/svg">
    <!ENTITY ns_xlink "http://www.w3.org/1999/xlink">
  ]>
-<svg xmlns="&ns_svg;" xmlns:xlink="&ns_xlink;" width="132.72" height="127.219" viewBox="0 0 132.72 127.219" overflow="visible" enable-background="new 0 0 132.72 127.219" xml:space="preserve">
+<svg xmlns="&ns_svg;" xmlns:xlink="&ns_xlink;" width="70" height="67" viewBox="0 0 132.72 127.219" overflow="visible" enable-background="new 0 0 132.72 127.219" xml:space="preserve">
 
    <title>Firefox Logo</title>
    <desc>Firefox logo in SVG, authored by Jon Hicks, made in Adobe Illustrator  (file format cleaned up and slightly modified by Doug Schepers)</desc>
