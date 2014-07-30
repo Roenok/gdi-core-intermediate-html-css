@@ -258,8 +258,8 @@ input:checked + label {
         </section>
         <section>
           <h2>Use a pseudo-selector</h2>
-          <p>We need to clear every 4th famous woman</p>
-          <p>Previously, this was done by manually adding a <strong>break</strong> class to every 4th element</p>
+          <p>We need to clear every at the start of every row.</p>
+          <p>Previously, this was done by manually adding a <strong>break</strong> class to element 4, 7, etc.</p>
           <img src="images/screenshots/famous-break.png" alt=""/>
           <p>Replace this with an <strong>:nth-child</strong> selector</p>
         </section>
@@ -267,12 +267,12 @@ input:checked + label {
           <h2>Example solutions</h2>
           <p>Make the rows of women three long</p>
           <pre><code>
-#famous article:nth-child(4n) {
+#famous article:nth-child(3n+1) {
   clear: both;
 }
           </code></pre>
           <pre><code>
-#famous div:nth-child(4n) {
+#famous div:nth-child(3n+1) {
   clear: both;
 }
           </code></pre>

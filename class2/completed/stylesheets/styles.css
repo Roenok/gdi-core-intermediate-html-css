@@ -166,7 +166,7 @@ header:after {
   opacity: 1;
 }
 
-#famous article:nth-child(4n) {
+#famous article:nth-child(3n+1) {
   clear: both;
 }
 
