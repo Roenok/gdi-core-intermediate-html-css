@@ -302,6 +302,102 @@
         </section>
       </section>
       
+      <!-- CSS Pre-Processors -->
+      <section>
+        <section>
+          <h2>CSS Pre-Processors</h2>
+          <img src="images/css_pre_processors.jpg" alt="Sass, LESS, and Stylus"/>
+        </section>
+        <section>
+          <h2>What is a pre-processor?</h2>
+          <p>You write your code in special syntax...</p>
+          <pre><code class="scss">
+$body-width: 65em;
+$maincolor: #3D194F;
+
+#main{
+  color: $maincolor;
+  width: $bodyWidth;
+  .accentbox {
+    width: $bodyWidth - 5em;
+    background-color: lighten($maincolor, 50%);
+  }
+}
+          </code></pre>
+        </section>
+        <section>
+          <h2>What is a pre-processor?</h2>
+          <p>Then the pre-processor compiles it into valid CSS</p>
+          <pre><code class="css">
+#main {
+  color: #3d194f;
+  width: 65em;
+}
+#main .accentbox {
+  width: 60em;
+  background-color: #c18cdb;
+}
+          </code></pre>
+        </section>
+        <section>
+            <h2>Why bother?</h2>
+            <ul>
+                <li>Less code to maintain (Don't Repeat Yourself)</li>
+                <li>Can organize your code into multiple files</li>
+                <li>Easier to maintain</li>
+                <li>Easy to reuse code from project to project</li>
+            </ul>
+        </section>
+        <section>
+          <h2>Common Features</h2>
+          <ul>
+            <li>Variables</li>
+            <li>Nesting</li>
+            <li>Mix-ins</li>
+            <li>Inheritance</li>
+            <li>Color functions</li>
+            <li>Vendor prefixes</li>         
+          <ul>
+        </section>
+        <section>
+          <h2>Popular tools</h2>
+          <ul>
+            <li><a href="http://lesscss.org/">Less</a></li>
+            <li><a href="http://sass-lang.com/">Sass</a></li>
+            <li><a href="http://learnboost.github.io/stylus/">Stylus</a></li>        
+          <ul>
+        </section>
+      </section>
+      
+      <!-- Preprocessor exercises -->
+      <section>
+          <section>
+            <h2>Let's Develop It!</h2>
+            <p>Let's try Sass using an in-browser tool. Go to <a href="http://sassmeister.com/" target="_blank">SassMeister</a> to open a sandbox.<p>
+            <p>Use this code:</p>
+            <pre><code class="scss">
+    $myColor: #FF6163;
+
+    p.mycolor {
+      color: $myColor;
+      background-color: lighten($myColor, 25%);
+      a {
+        color: $myColor/2;
+      }
+    }
+            </code></pre>
+          </section>
+          <section>
+            <h2>Let's Develop It!</h2>
+            <ul>
+                <li>See how the code compiles into CSS</li>
+                <li>Add some matching HTML so you can see your changes</li>
+                <li>Change the value of a variable</li>
+                <li>Add a new variable, and use it to define padding</li>
+            </ul>
+          </section>
+      </section>
+      
       <!-- Frameworks -->
       <section>
         <section>
