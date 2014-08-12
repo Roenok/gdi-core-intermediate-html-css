@@ -319,6 +319,9 @@ footer:after {
   header nav li{
     line-height: 40px;
   }
+  video{
+    max-width: 100%;
+  }
 }
 /** Mobile view **/
 @media screen and (max-width: 480px){
@@ -365,5 +368,45 @@ footer:after {
      font-size: 0.9em;
      margin: 3px;
      padding: 1px;
-   }
+   }   
+   video{
+    max-width: 100%;
+  }
 }
+
+
+/*Print Styles*/
+
+@media print {
+    @page {
+        margin: 0.5cm;
+    }
+    header nav, footer, video, audio, a.jump, #organizations img{
+        display: none;
+    }
+    img, table, #organizations ul li{
+        max-width: 100%;
+    }
+    body, h2 {
+        font: 12pt Georgia, "Times New Roman", Times, serif;
+        line-height: 1.3;
+        color: #000;
+    }
+    h2{
+        font-size: 150%;
+    }
+    #famous article.woman  {
+        page-break-inside: avoid;
+        width: 100%;
+        min-height: 125px;
+    }
+    #famous article img {
+        width: 120px;
+        float: left;
+        margin-right: 1em;
+    }
+    #organizations{
+        height: auto;
+    }
+}
+
