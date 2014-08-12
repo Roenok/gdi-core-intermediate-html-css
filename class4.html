@@ -177,6 +177,80 @@ background-color: blue;
           </ul>
         </section>
       </section>
+      
+      <!-- Print CSS -->
+      <section>
+        <section>
+            <h2>Print Stylesheets</h2>
+            <img src="images/printer.jpg" alt="Printer"/>
+            <p class="credit">Photo credit:  <a href="https://flic.kr/p/9RYxrg">Jung-nam Nam</a> <a href="http://creativecommons.org/licenses/by-nc-sa/2.0/">cc</a></p>
+        </section>
+        <section>
+            <h2>Print Stylesheets</h2>
+            <ul>
+                <li>Set special rules for printing (or converting to PDF)</li>
+                <li>The print stylesheet sets rules for printed content</li>
+                <li>Hide unnecessary content, like headers and sidebars</li>
+                <li>Format your content not to waste paper</li>
+            </ul>        
+        </section>
+        <section>
+            <h2>Two ways to make a print style sheet</h2>
+            <p>Add it to your main css file:</p>        
+            <pre><code contenteditable>
+@media print {
+   …
+}
+            </code></pre>
+            <p>Or create a separate file:</p>        
+            <pre><code contenteditable>
+&lt;link rel="stylesheet" href="print.css" media="print"&gt;
+            </code></pre>
+        </section>
+        <section>
+            <h2>Best practices</h2>
+            <ul>
+                <li>Hide elements like nav menus and video
+                <pre><code contenteditable>
+header nav, footer, video, audio {
+    display: none;
+}
+                </code></pre>
+                </li>
+                <li>Constrain the size of images and tables
+                <pre><code contenteditable>
+img, table {
+    max-width: 600px;
+}
+                </code></pre>
+                </li>
+            </ul>
+        </section>
+        <section>
+            <h2>Best practices</h2>
+            <ul>
+                <li>Set up your text for maximum readability</li>
+                <li>Put elements like sidebars and comments in the right place</li>
+                <li>Make sure branding elements like logos look good</li>
+                <li>Don't print big swatches of color</li>
+                <li>Replace any key background images; most browsers will not print</li>
+            </ul>   
+        </section>
+        
+        <!-- Let's Develop It-->
+      <section>
+        <section>
+          <h2>Let's Develop It</h2>
+          <p>Add some print styles to our Women in Computing web site</p>
+          <ul>
+            <li>Hide any unneeded content</li>
+            <li>Make sure the grid will print well</li>
+            <li>Look for any display errors</li>
+          </ul>
+        </section>
+      </section>
+      
+      </section>
 
       <!-- Tools and Deployment -->
       <section>
