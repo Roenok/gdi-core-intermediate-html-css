@@ -183,9 +183,39 @@ background-color: blue;
       </section>
       
       <!-- Mobile First Design -->
+      <section>
+        <section>
+            <h2>Mobile first design</h2>
+            <p>You can write responsive styles many different ways. However, it is good practice to write your mobile styles first, then add additional styles for larger devices.</p>
+            <p>This is called mobile first design</p>
+        </section>
+        
+        <section>
+            <h2>Why?</h2>
+            <img src="images/stats-graph.png" alt="Graph showing decline in desktop traffic and increase in mobile worldwide">
+            <p class="credit">Source: <a href="http://gs.statcounter.com/#all-comparison-ww-monthly-200812-201503">StatCounter Global Stats - Platform Comparison Market Share</a></p>
+        </section>
+        
+        <section>
+            <h2>Mobile first</h2>
+            <p>We write our mobile styles first, so that smaller devices don't have to worry about loading a bunch of extra styling.</p>
+            <pre><code>.sidebar {
+      width: 100%;
+      text-align: center;
+    }</code></pre>
+            <div class="fragment">
+                <p>Then we work our way up to larger screen sizes.</p>
+                <pre><code>@media screen and (min-width: 768px) {
+      .sidebar {
+        width: 30%;
+        text-align: left;
+        float: right;
+      }
+    }</code></pre>
+            </div>
+        </section>
+      </section>
       
-      
-
       <!-- Let's Develop It-->
       <section>
         <section>
